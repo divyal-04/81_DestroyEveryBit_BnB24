@@ -192,7 +192,7 @@ def error_page(request):
 
 def send_mail_after_registration(email , token):
     subject = 'Your accounts need to be verified'
-    message = f'Click on this link to verify and Login http://127.0.0.1:8000/verify/{token}'
+    message = f'Click on this link to verify and Login http://127.0.0.1:8000/cutomer/verify/{token}'
     email_from = settings.EMAIL_HOST_USER
     recipient_list = [email]
     send_mail(subject, message , email_from ,recipient_list )

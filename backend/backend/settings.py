@@ -131,4 +131,4 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_FROM = 'divyals.patil36@gmail.com'
 EMAIL_HOST_USER = 'divyals.patil36@gmail.com'
-EMAIL_HOST_PASSWORD = 'hslw hnuc susp bdni'
+EMAIL_HOST_PASSWORD = 'jwro xhif wlqg pmfa'
