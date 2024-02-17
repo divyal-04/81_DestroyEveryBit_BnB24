@@ -186,13 +186,18 @@ def verify(request, auth_token):
     except Exception as e:
         print(e)
         return JsonResponse({'message': 'Internal server error'}, status=500)
+    
 
 def error_page(request):
     return JsonResponse({'message': 'Error.'}, status=404)
 
 def send_mail_after_registration(email , token):
     subject = 'Your accounts need to be verified'
+<<<<<<< HEAD
     message = f'Click on this link to verify and Login http://127.0.0.1:8000/cutomer/verify/{token}'
+=======
+    message = f'Click on this link to verify and Login http://127.0.0.1:8000/customer/verify/{token}'
+>>>>>>> 63ebe147713dc8efa056fa0c8d239c035f1d5a0f
     email_from = settings.EMAIL_HOST_USER
     recipient_list = [email]
     send_mail(subject, message , email_from ,recipient_list )

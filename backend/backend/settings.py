@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'accounts',
     'brand',
+    'marketplace',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -131,4 +132,11 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_FROM = 'divyals.patil36@gmail.com'
 EMAIL_HOST_USER = 'divyals.patil36@gmail.com'
+<<<<<<< HEAD
 EMAIL_HOST_PASSWORD = 'jwro xhif wlqg pmfa'
+=======
+EMAIL_HOST_PASSWORD = 'hslw hnuc susp bdni'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+>>>>>>> 63ebe147713dc8efa056fa0c8d239c035f1d5a0f
